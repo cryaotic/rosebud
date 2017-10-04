@@ -125,22 +125,20 @@ aside {
 }
 
 /*back to top*/
+
 .back-to-top {
 	display: none;
 	width: 50px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.02);
 	height: 50px;
-	background: #e57ca2;
+	background: pink;
 	position: fixed;
 	z-index: 999;
 	right: 35px;
 	bottom: 30px;
 	text-align:center;
 	font-size: 26px;
-    color: #fff;
-}
-.back-to-top:hover{
-  color: rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .back-to-top i{

@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-<script src="https://use.fontawesome.com/45565ed01f.js"></script>
-
+    <script src="https://use.fontawesome.com/45565ed01f.js"></script>
+<script type="text/javascript" language="javascript" src="https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=7e0654d636b56bfe6a0970b99e23e0f7"></script>
+<script src="https://use.fontawesome.com/5b270f343a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css">
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
     <link rel="stylesheet" href="base.css">
-    <title>typed</title>
+    <title>rosebud</title>
   </head>
   <body class="tmblr-iframe-overlay tmblr-iframe-themed tmblr-iframe-compact">
     <div class="container">
@@ -42,8 +46,8 @@
 </a>
       </div>
     </aside>
-    <div class="post" id="topofpage">
-      <h1 id="essaylocation">Web Essay</h1>
+    <div class="post">
+      <h1>Web Essay</h1>
       <div class="txt">
         <p>harley toribio</p>
       <blockquote>
@@ -53,7 +57,7 @@
       <div class="perma">
         <a href="#">Source</a>
         -
-        <a href="#topofpage"id="button" class="button scrolly">Back to Top</a>
+        <a href="#">Back to Top</a>
       </div>
     </div>
 <div class="post">
@@ -63,19 +67,60 @@
   -
   <a href="https://html5up.net">Back to Top</a>
 </div>
-
-
-
-
   <div class="footer">
     &copy; <a href="https://html5up.net">html5 up</a> | madoof
   </div>
   </div>
-  <a class="back-to-top" title="back to top"href="#topofpage" style="display: inline;"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+  <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
   </div>
   </body>
-  <iframe id="ga_target" scrolling="no" style="background-color: transparent; overflow:hidden; position:absolute; top:0; left: 0; z-index: 9999;" width="1" height="1" frameborder="0">
-#document
-  </iframe>
+<!-- SCRIPTS -->
+<script async="" src="https://assets.tumblr.com/assets/scripts/vendor/cedexis/1-13960-radar10.min.js?_v=77dfb4bb1a11ea70437c4a4c73210169" type="text/javascript" id="tumblr-cdx"></script>
+<script async="" src="https://full-ruler.secure.yahoo.com/js/pixie.js" type="text/javascript" id="tumblr-pixie"></script>
+<script>
 
+    (function($){
+$(document).ready(function(){
+    $("[title]").style_my_tooltips({
+        tip_delay_time:200,
+        tip_fade_speed:300
+        }
+    );
+});
+})(jQuery);
+
+
+
+$(document).ready(function(){
+   $('.photo-slideshow').pxuPhotoset({
+       lightbox: true,
+       rounded: false,
+       gutter: '3px',
+       borderRadius: '0px',
+       photoset: '.photo-slideshow',
+       photoWrap: '.photo-data',
+       photo: '.pxu-photo'
+   });
+});
+
+
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('2000');
+	} else {
+		$('a.back-to-top').fadeOut('2000');
+	}
+});
+
+$('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
+</script>
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target" src="https://assets.tumblr.com/analytics.html?e545bd2397476017430227533432638a#https://digitalrainbow-03.tumblr.com"></iframe>
 </html>
